@@ -22,6 +22,8 @@
                 clifford: '#da373d',
 
               }
+              fontFamily:{
+                'ADLaM Display'}
             }
           }
         }
@@ -31,38 +33,39 @@
 <body>
     
     <!--nav start-->
-   <nav class="flex bg-orange-100 w-full-fixed  justify-around items-center" >
-    <child class="">
-        <img src="./Assignment_03_Category_0001/c1-assets/logo-header.png">
-        <p>Browse<span class="text-orange-600">4</span>Pets</p>
-    </child>
+    <nav class="flex bg-orange-100 p-5 w-full-fixed  justify-around items-center" >
+        <child class="">
+            <img src="./Assignment_03_Category_0001/c1-assets/logo-header.png">
+            <p>Browse<span class="text-orange-600">4</span>Pets</p>
+        </child>
+        
+        <child >
+            <ul class="flex justify-center gap-5 ">
+                <li class="hover:bg-orange-200 rounded p-2"><a href="#">Find a pet</a></li>
+                <li class="hover:bg-orange-200 rounded p-2"><a href="#">Breeds</a></li>
+                <li class="hover:bg-orange-200 rounded p-2"><a href="#">Contact us</a></li>
+            </ul>
+        </child>
+        
+        <child class="flex justify-center gap-5" >
+            <i class="fa-regular fa-bell " ></i>
+            <i class="fa-solid fa-magnifying-glass" ></i>
+            <button class="primary bg-white rounded p-2 hover:bg-orange-200">Login</button>
+            <button class="primary bg-yellow-300 rounded p-2 hover:bg-orange-200">Register</button>
+        </child>
     
-    <child >
-        <ul class="flex justify-center gap-5 ">
-            <li><a href="#">Find a pet</a></li>
-            <li><a href="#">Breeds</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-    </child>
+       </nav>
     
-    <child class="flex justify-center gap-5" >
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button>Login</button>
-        <button>Register</button>
-    </child>
-
-   </nav>
     <!--nav end-->
 
 
      <!--Banner start-->
-<div class=" max-w-screen-xl max-h-screen-x mx-auto px-16
+<div class="w-auto max-w-screen-xl max-h-screen-x mx-auto px-16
 font-ADLaM Display lg:px-28  ">
     <h1 class="text-3xl font-ADLaM font-bold ">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
     <p class="text-slate-400 ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
     </p>
-    <button class="bg-yellow-300 rounded px-2 text-center py-1 hover:animate-spin ">Find a pet</button>
+    <button class="bg-yellow-300 rounded px-2 text-center py-1 hover:animate-spin hover:bg-yellow-200 ">Find a pet</button>
 <img src="./Assignment_03_Category_0001/c1-assets/cat-big.png" >
 </div>
     <!--Banner end-->
@@ -76,7 +79,7 @@ font-ADLaM Display lg:px-28  ">
         <!--card1--> 
         <div class="w-45 p-10 bg-yellow-100 rounded-lg mx-auto flex flex-col item-center ">
             <img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="" class=" rounded-full bg-white  h-auto " >
-            <h2 class="font-bold ">Dog</h2>
+            <h2 class="font-bold  ">Dog</h2>
             <p>3 items</p>
          </div>
 
@@ -135,7 +138,7 @@ font-ADLaM Display lg:px-28  ">
         
     <h2 class="text-xl font-ADLaM font-bold">T-Shirt for Dogs</h2>
     <p class="text-sm">Discover a world of treats,toys and essentials handpicked for</p>
-    <button class="primary  rounded px-2 text-center bg-white py-1">Shop Now</button>
+    <button class="primary  rounded px-2 text-center bg-white py-1 hover:bg-orange-200 ">Shop Now</button>
     <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png">
 </div>
 <hr>
@@ -273,27 +276,42 @@ font-ADLaM Display lg:px-28  ">
     <!--5 everyday low price end-->
 
      <!--6 extra start-->
+<h1 class="text-3xl font-ADLaM font-bold ">Pet Exhibition</h1>
+<div class="parent-section bg-orange-100 p-5 m-10 rounded-lg">
+    <div class="card flex flex-col lg:flex-row mx-10 md:mx-20 lg:mx-52 rounded-lg">
+        <img src="./Assignment_03_Category_0001/c1-assets/extra.jpg" height="200" width="300"  class="thambnail">
+        <div class="card-details justify-center ml-10">
+            <div class="top flex flex-row justify-center align-center font-bold text-black-400">
+          <div class="data">Join us for a delightful day at the Pet Exhibition.</div>
+          
+     </div>
+     <p class="details">The 5th AHCAB International Expo is scheduled to take place from 30 to March 10, 2025, at the International Convention City Bashundhara (ICCB) in Dhaka. This event will showcase the latest in animal health, livestock, fisheries, and pet care.
+    </p><br>
+    <button class="primary bg-yellow-300 rounded p-2 hover:bg-orange-200 ">Learn More</button>
+        </div>
+    </div>
+</div>
     <!--extra end-->
 
      <!--7 challenge start-->
-    <!--7 end-->
+    
 
     <!--footer card-->
-    <div class="flex flex-row bg-yellow-100 py-10 w-3/4 justify-center item-center">
+    <div class="size-96 flex flex-row justify-center bg-yellow-100 ml-40 py-10 w-3/4   relative top-20  rounded-lg ">
         <!--img-->
         <div>
   <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-small.png">
         </div>
 <!--text-->
 <div>
-<h2>Get Pawsome News!</h2>
-<p>Exclusive training tips, ticks, product deals and more.</p>
-<input type="text" placeholder="Enter Email... " class="p-2 "><br>
-<button class="primary bg-yellow-300 rounded p-2 ">Subscribe</button>
+<h2 class="font-bold text-lg">Get Pawsome News!</h2>
+<p class="my-1">Exclusive training tips, ticks, product deals and more.</p>
+<input type="text" placeholder="Enter Email... " class="p-2 "><br><br>
+<button class="primary bg-yellow-300 rounded p-2 hover:bg-orange-200 ">Subscribe</button>
 </div>
     </div>
      <!--footer start-->
-     <div class="flex flex-row justify-evenly item-center bg-orange-200 p-20">
+     <div class="flex flex-row justify-evenly item-center bg-orange-200 p-20 ">
         <!--part1-->
 
 <div >
