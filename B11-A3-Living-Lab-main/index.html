@@ -14,6 +14,18 @@
 
 <!-- tailwind css link-->
      <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+
+              }
+            }
+          }
+        }
+      </script>
       
 </head>
 <body>
@@ -22,7 +34,7 @@
    <nav class="flex bg-orange-100 w-full-fixed  justify-around items-center" >
     <child class="">
         <img src="./Assignment_03_Category_0001/c1-assets/logo-header.png">
-        <p>Browse4Pets</p>
+        <p>Browse<span class="text-orange-600">4</span>Pets</p>
     </child>
     
     <child >
@@ -60,8 +72,8 @@ font-ADLaM Display lg:px-28  ">
     <!--3rd part catagory start-->
     <div>
         <h1 class="text-2xl font-bold">Browse By Categories</h1>
-       <div class="flex cols-1 gap-10 p-5 ">
-        <!--card1-->
+       <div class="grid grid-cols-9 gap-10 "sm":"">
+        <!--card1--> 
         <div class="w-45 p-10 bg-yellow-100 rounded-lg mx-auto flex flex-col item-center ">
             <img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="" class=" rounded-full bg-white  h-auto " >
             <h2 class="font-bold ">Dog</h2>
@@ -107,7 +119,7 @@ font-ADLaM Display lg:px-28  ">
 
        </div>
     </div>
-    <hr>
+    
     <!--3rd part catagory  end-->
 <hr>
 
@@ -116,9 +128,9 @@ font-ADLaM Display lg:px-28  ">
      <!--4th part brows by start-->
     <h1 class="text-3xl font-ADLaM font-bold ">Trending Pet Products</h1>
     <!--card gallary-->
-    <div class="flex flex-row gap-20 bg-orange-100 p-10">
-<!--single card-->>
-<div  class="w-auto bg-yellow-200 p-10">
+    <div class="lg:flex flex-row gap-10 bg-orange-50 p-10">
+<!--single card-->
+<div  class="w-auto bg-yellow-200 p-10 rounded-lg">
 
         
     <h2 class="text-xl font-ADLaM font-bold">T-Shirt for Dogs</h2>
@@ -127,94 +139,95 @@ font-ADLaM Display lg:px-28  ">
     <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png">
 </div>
 <hr>
+
 <!--container-->
-<div class="flex flex-row flex-wrap gap-10 ">
+<div class="container grid grid-cols-2 lg:grid grid-cols-3 gap-5 ">
     <!--gallary card1--> 
-<div class="w-32 bg-slate-50 flex flex-row p-2 ">
+<div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
 <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
 <!--card1-->
 <div >
-    <h4>4.0</h4>
+    <h4><i class="fa-solid fa-star"></i>4.0</h4>
     <p class="">Pet Bed</p>
     <h4>$39.99</h4>
 </div>
 </div>
 <!--gallary card2--> 
-<div class="w-32 bg-slate-50 flex flex-row p-2 ">
+<div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg ">
     <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
     <!--card1-->
     <div >
-        <h4>4.0</h4>
+        <h4><i class="fa-solid fa-star"></i>4.0</h4>
         <p>Pet Bed</p>
         <h4>$39.99</h4>
     </div>
     </div>
     <!--gallary card3--> 
-    <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+    <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
         <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
         <!--card1-->
         <div >
-            <h4>4.0</h4>
+            <h4><i class="fa-solid fa-star"></i>4.0</h4>
             <p>Pet Bed</p>
             <h4>$39.99</h4>
         </div>
         </div>
 <!--gallary card4--> 
-<div class="w-32 bg-slate-50 flex flex-row p-2 ">
+<div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
     <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
     <!--card1-->
     <div >
-        <h4>4.0</h4>
+        <h4><i class="fa-solid fa-star"></i>4.0</h4>
         <p>Pet Bed</p>
         <h4>$39.99</h4>
     </div>
     </div>
     <!--gallary card5--> 
-    <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+    <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
         <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
         <!--card1-->
         <div >
-            <h4>4.0</h4>
+            <h4><i class="fa-solid fa-star"></i>4.0</h4>
             <p>Pet Bed</p>
             <h4>$39.99</h4>
         </div>
         </div>
         <!--gallary card6--> 
-    <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+    <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
         <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
         <!--card6-->
         <div >
-            <h4>4.0</h4>
+            <h4><i class="fa-solid fa-star"></i>4.0</h4>
             <p>Pet Bed</p>
             <h4>$39.99</h4>
         </div>
         </div>
         <!--gallary card7--> 
-    <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+    <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
         <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
         <!--card1-->
         <div >
-            <h4>4.0</h4>
+            <h4><i class="fa-solid fa-star"></i>4.0</h4>
             <p>Pet Bed</p>
             <h4>$39.99</h4>
         </div>
         </div>
         <!--gallary card8--> 
-        <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+        <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
             <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
             <!--card1-->
             <div >
-                <h4>4.0</h4>
+                <h4><i class="fa-solid fa-star"></i>4.0</h4>
                 <p>Pet Bed</p>
                 <h4>$39.99</h4>
             </div>
             </div>
             <!--gallary card9--> 
-            <div class="w-32 bg-slate-50 flex flex-row p-2 ">
+            <div class="w-32 bg-slate-50 flex flex-row p-2 rounded-lg">
                 <div><img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"></div>
                 <!--card1-->
                 <div >
-                    <h4>4.0</h4>
+                    <h4><i class="fa-solid fa-star"></i>4.0</h4>
                     <p>Pet Bed</p>
                     <h4>$39.99</h4>
                 </div>
@@ -230,7 +243,7 @@ font-ADLaM Display lg:px-28  ">
      <!--container-->
      <div class="flex flex-row justify-center gap-10 py-10">
         <!--1st card-->
-       <div class="w-3/6  bg-gradient-to-r from-violet-300 to-sky-100 flex flex-row justify-evenly item-center p-10">
+       <div class="w-3/6  bg-gradient-to-r from-violet-300 to-sky-100 flex flex-row justify-evenly item-center p-10 rounded-lg">
         <div class="">
             <h3 class="text-xl font-ADLaM text-sm ">Under Price</h3>
             <h2 class="text-2xl font-ADLaM font-bold">Pet Grooming Mitt</h2>
@@ -244,7 +257,7 @@ font-ADLaM Display lg:px-28  ">
         
         
         <!--2nd card-->
-        <div  class="w-2/6  bg-gradient-to-r from-slate-100 to-yellow-200 flex flex-row justify-evenly item-center p-10">
+        <div  class="w-2/6  bg-gradient-to-r from-slate-100 to-yellow-200 flex flex-row justify-evenly item-center p-10 rounded-lg">
             <div>
             
                 <h2>T-Shirt for Dogs</h2>
@@ -265,7 +278,47 @@ font-ADLaM Display lg:px-28  ">
      <!--7 challenge start-->
     <!--7 end-->
 
+    <!--footer card-->
+    <div class="flex flex-row bg-yellow-100 py-10 w-3/4 justify-center item-center">
+        <!--img-->
+        <div>
+  <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-small.png">
+        </div>
+<!--text-->
+<div>
+<h2>Get Pawsome News!</h2>
+<p>Exclusive training tips, ticks, product deals and more.</p>
+<input type="text" placeholder="Enter Email... " class="p-2 "><br>
+<button class="primary bg-yellow-300 rounded p-2 ">Subscribe</button>
+</div>
+    </div>
      <!--footer start-->
+     <div class="flex flex-row justify-evenly item-center bg-orange-200 p-20">
+        <!--part1-->
+
+<div >
+    <div>
+        <img src="./Assignment_03_Category_0001/c1-assets/logo-footer.png">
+    </div>
+    <div>Browse<span class="text-orange-600">4</span>Pets</div>
+    <p>Discover a world of treats, toys,<br>and essentials handpicked for your furry <br>friends</p>
+</div>
+<!--part2-->
+<div>
+<h3>Find a pet</h3>
+<h3>Breeds</h3>
+<h3>Contact us</h3></div>
+<!--part3-->
+<div>
+   <h3>Follow Us</h3>
+   <div >
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-youtube"></i>
+   </div>
+</div>
+     </div>
 
     <!--footer end-->
 </body>
